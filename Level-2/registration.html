@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            background: linear-gradient(to bottom left , #894297, white);
+        }
+        nav{
+            background-color: rgba(246, 230, 83, 0.87);
+            width: 100%;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+            height: 50px;
+        }
+        .img{
+            float: left;
+            margin-left: 10px;
+        }
+        .heading{
+            text-align: center;
+            border-right: 2px solid black;
+            width: 230px;
+            font-size: 22px;
+            line-height: 50px;
+            padding-right: 10px;
+            float: left;
+            color: black;
+            letter-spacing: 0.8px;
+        }
+        nav ul{
+            float:right;
+            margin-right: 60px;
+        }
+        nav ul li{
+            display: inline-block;
+            line-height: 50px;
+            margin: 0 5px;
+        }
+        nav ul li a{
+            color: black;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+        a.active,a:hover{
+            background-color: rgba(151, 244, 12, 0.548);
+            transition: .5s;
+            color: whitesmoke;
+        }
+        .my{
+            box-shadow: 7px 0px 10px -3px rgba(47,47,47,0.8), 0px 8px 10px -3px rgba(47,47,47,0.8), -7px 0px 10px -3px rgba(47,47,47,0.8);
+            padding: 5px;
+            height: 450px;
+            background-color: #ebebe8;
+            border-radius: 12px;
+        }
+        .name{
+            float: left;
+            margin-left: 50px;
+        }
+        .part1, .part3{
+            border: 0.1px solid black;
+            float: left;
+            border-radius: 50%;
+            width: 130px;
+            height: 130px;
+            margin-top: 100px;
+            color: rgb(107, 39, 172);
+            font-weight: bold;
+        }
+
+        .part3{
+            margin-left: 30px;
+        }
+        .part1>h2, .part3>h2{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            font-weight: bold;
+            padding-top: 50px;
+            
+        }
+        .part1:hover, .part3:hover{
+            background-color: rgb(255, 174, 0);
+            color: white;
+            box-shadow: 7px 0px 10px -3px rgba(47,47,47,0.6), 0px 8px 10px -3px rgba(47,47,47,0.5), -7px 0px 10px -3px rgba(47,47,47,0.5);
+        }
+        fieldset{
+            background-color: white;
+            border-radius: 5px;
+        }
+        #education, #details, #skills, .hobbies{
+            margin: 1% 2% 3% 4%;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        #education>fieldset>legend, #details>fieldset>legend, #skills>fieldset>legend, .hobbies>fieldset>legend{
+            padding: 10px;
+            font-weight: bold;
+            margin: 6px;
+            font-size: 24px;
+            box-shadow: 7px 0px 10px -3px rgba(47,47,47,0.6), 0px 8px 10px -3px rgba(47,47,47,0.5), -7px 0px 10px -3px rgba(47,47,47,0.5);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            background-color: rgba(246, 230, 83, 0.87);
+            color: black
+        }
+        #education ul, #details>fieldset>p, #skills ul{
+            margin-left: 70px;
+            margin-bottom: 10px;
+        }
+        .hobbies ul, .hobbies ol{
+            margin-left: 80px;
+            margin-bottom: 10px;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        #details>fieldset>p{
+            font-size: 20px;
+        }
+        #skills>fieldset>ul>li, .hobbies>fieldset>ul>li{
+            margin-top: 7px;
+            font-size: 20px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        b, h3{
+            margin-right: 2px;
+        }
+        footer{
+            height: 60px;
+            color: white;
+            background-color:rgb(29, 28, 28);
+            padding-top: 10px;
+            font-size: 22px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="img">
+            <img src="./account_circle_FILL0_wght400_GRAD0_opsz48 (1).png" alt="icon">
+        </div>
+        <div class="heading">
+           Personal Resume 
+        </div>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#details">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#down">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="my" style="margin: 5% 4% 5% 6%;">
+        <img src="./20230318_164027.png" alt="my picture" width="400px" style="border-radius: 50%; float: left; margin-top: 10px;">
+        <div class="name">
+                <p style=" font-size: 48px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; margin-top: 60px; color: rgb(255, 145, 0); text-decoration-color: 1px solid black;">BOJJA UDAY BABU</p>
+                <p><i style="font-size: 20px; margin-left: 10px;">Studying in Vishnu Institute of Technology.</i></p>
+            <a href="#details"><div class="part1"><h2>About Me</h2></div></a>
+            <a href="#education"><div class="part3"><h2>Education</h2></div></a> 
+            <a href="#skills"><div class="part3"><h2 style="margin-top: -10px; font-size: 20px;">Technical Qualification</h2></div></a> 
+        </div>
+    </div>
+    <div id="details">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p style="font-size: 18px; margin-top: 10px;">
+                <b>NAME: </b> B. Uday Babu</p>
+            <p><b>Date of Birth: </b> 21-04-2004</p>
+            <p><strong>Father Name: </strong> B. Shiva Kumar</p>
+            <p><b>Mother Name: </b> B. Lakshmi</p>
+            <p><strong>Phone Number: </strong> 9133497927</p>
+            <p><h3 style=" margin-left: 70px; float: left; margin-right: 3px;">Nationality: </h3> Indian </p>
+            <p><b>Gender: </b> Male </p>
+            <p><b>Langugaes Known: </b> Telugu, English, Hindi </p>
+            <p><b>Email id: </b><i> udaybabu1358@gmail.com </i><br></p>
+            <p><b>Address: </b></p>
+            <p style="margin-left: 100px;">house,127/4 ramarao peta<br>
+                ladies club back side<br>
+                Kakinada-533003<br>
+            </p>
+        </fieldset>
+    </div>
+    <div class="hobbies">
+        <fieldset>
+            <legend>Hobbies</legend>
+            <ol style="list-style-type:circle;">
+                <li><em>Drawing</em> </li>
+                <li><em>writing</em> </li>
+                <li> <em>Photography and Cooking</em></li>
+            </ol>
+        </fieldset>
+    </div>
+    <div id="education">
+        <fieldset>
+            <legend>Educational Qualification</legend>
+        <ul>
+            <li style="margin-top: 10px;"><b>10<sup>th</sup></b> passed from <cite> SSC </cite> Board with
+            100%.</li>
+            <li style="margin-top: 10px;"><b>12<sup>th</sup></b> passed from <cite> BIEAP </cite> Board with 
+            91.7%.</li>
+        </ul>
+        </fieldset>
+    </div>
+    <div id="skills">
+        <fieldset>
+            <legend>Technical Qualification</legend>
+            <ul><li>HTML</li>
+                <li>CSS</li>
+                <LI>C</LI>
+                <LI>PYTHON</LI>
+                <LI>JAVA</LI>
+            </ul>
+        </fieldset>
+    </div>
+    <div class="hobbies">
+        <fieldset>
+            <legend>Sports & Others</legend>
+            <h3 style="margin-left: 60px;">Sports:</h3> <br>
+            <span style="margin-left: 70px; margin-top: 9px; font-size: 18px;">Played Hockey at District Level</span>
+            <hr width="90%" style="margin: 1% 2% 1% 3%;">
+            <span style="margin-left: 60px; font-weight: bold; font-size: 20px;">Others:</span> <br> <br>
+            <p style="margin-left: 70px; margin-bottom: 10px;">NCC with 'A' Grade Certification</p>
+        </fieldset>
+    </div>
+    <div class="hobbies">
+        <fieldset>
+            <legend>Declaration</legend>
+        <p style="margin: 10px 5px 8px 60px; font-size: 20px;">I hereby declare that every information is true and I am
+            solely responsible for its authenticity.
+            </p>
+        </fieldset>
+        
+    </div>
+    <footer id="down">
+     <span style="text-align: center; float: right; margin-right: 40px;"> Follow me on</span>
+     <a href="#"><button type="button" style="padding: 5px; float: left; margin-left: 20px;"><h4>Click here to go up</h4></button></a>
+     <a href="#" class="fa fa-instagram" style="float: right; margin-top: 25px; margin-right: -40px; color: white;"></a>
+     <a href="#" class="fa fa-linkedin" style="float: right; margin-top: 25px; margin-right: -90px; color: white;"></a>
+</body>
+</html>
